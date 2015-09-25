@@ -1,0 +1,4 @@
+parameters:
+    sitemap:
+        limit: 30000
+        gzip: 1
