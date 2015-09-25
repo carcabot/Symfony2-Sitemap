@@ -18,12 +18,18 @@ Symfony2 is a nice PHP framework that provides different ways to solve problems.
 
 There are no special requirements. This solution does not require special bundles or libraries. To view the generated sitemaps file with a browser.
 
-###### app/config/config.yml
+## Installation 
 
-```yml```
-parameters:
-    sitemap:
-        limit: 30000
-        gzip: 1
-``` 
+1. Add to your `app/config/config.yml`
+
+    ```yml
+    parameters:
+        sitemap:
+            limit: 30000
+            gzip: 1
+    ```
 gzip can be 1 or 0 , it send gzip 
+
+2. Copy rest of files in your project
+
+3. Done.
