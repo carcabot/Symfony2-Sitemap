@@ -13,7 +13,7 @@
     <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
         {% for item in 1..list %}
             <sitemap>
-                <loc>{{ absolute_url(path('sitemappath', {'page': loop.index, '_format': 'xml'})) }}</loc>
+                <loc>{{ absolute_url(path('sitemap', {'page': loop.index, '_format': 'xml'})) }}</loc>
                 <lastmod>{{ "now"|date('Y-m-d') }}</lastmod>
             </sitemap>
         {% endfor %}    
